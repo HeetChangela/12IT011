@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int coun=0;
+void main()
+{
+    int fac=1,i,n;
+    coun++;coun++;//coun for i and n
+    printf("Enter no. for Factorial\n");
+    scanf("%d",&n);
+
+    for(i=1;i<=n;i++)
+    {
+        fac=fac*i;coun++;coun++;//coun for forloop
+    }
+    coun++;//coun for return0
+    printf("factorial=%d counter=%d",fac,coun);
+
+    getch();
+}
